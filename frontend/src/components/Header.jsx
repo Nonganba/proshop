@@ -29,7 +29,12 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
+      <Navbar
+        variant="dark"
+        expand="md"
+        collapseOnSelect
+        style={{ background: "rgb(60,76,93)" }}
+      >
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
@@ -44,7 +49,7 @@ const Header = () => {
               <SearchBox />
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <FaShoppingCart style={{ marginRight: '5px'}}/>
+                  <FaShoppingCart style={{ marginRight: "5px" }} />
                   Cart
                   {cartItems.length > 0 && (
                     <Badge pill bg="success" style={{ marginLeft: "5px" }}>
