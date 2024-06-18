@@ -8,7 +8,6 @@ import {
   ListGroup,
   Image,
   Card,
-  ListGroupItem,
 } from "react-bootstrap";
 import { toast } from "react-toastify";
 import CheckoutSteps from "../components/CheckoutSteps";

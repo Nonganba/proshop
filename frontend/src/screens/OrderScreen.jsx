@@ -58,7 +58,7 @@ const OrderScreen = () => {
         }
       }
     }
-  }, [order, paypal, paypalDispatch, loadingPay, errorPayPal]);
+  }, [order, paypal, paypalDispatch, loadingPay, errorPayPal, loadingPayPal]);
 
   function onApprove(data, actions) {
     return actions.order.capture().then(async function (details) {
